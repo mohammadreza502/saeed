@@ -23,4 +23,4 @@ jobs:
           pip install -r requirements.txt  # اگر فایل requirements.txt دارید
 
       - name: Run Python script
-        run: from telegram import Bot.py  # نام فایل پایتون خود را وارد کنید
+        run: from telegram import Bot.py  # نام فایل پایتون خود را وارد کنید 
