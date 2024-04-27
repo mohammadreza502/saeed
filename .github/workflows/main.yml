@@ -1,8 +1,8 @@
-name: Daily Python Execution
+name: Every 30 seconds
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # این می‌گوید که وظیفه هر روز ساعت ۰:۰۰ اجرا شود
+    - cron: '*/30 * * * * *'  # این می‌گوید که وظیفه هر ۳۰ ثانیه اجرا شود
 
 jobs:
   run_python:
@@ -23,4 +23,4 @@ jobs:
           pip install -r requirements.txt  # اگر فایل requirements.txt دارید
 
       - name: Run Python script
-        run: from telegram import Bot.py  # نام فایل پایتون خود را وارد کنید
+        run: python from telegram import Bot  # نام فایل پایتون خود را وارد کنید
