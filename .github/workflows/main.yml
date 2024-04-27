@@ -1,8 +1,8 @@
-name: Run every 30 seconds
+name: Run every 5 minutes
 
 on:
   schedule:
-    - cron: '*/30 * * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   run_python:
